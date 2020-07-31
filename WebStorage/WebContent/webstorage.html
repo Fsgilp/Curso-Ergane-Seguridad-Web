@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Proyecto de webstorage</title>
+<script type="text/javascript">
+localStorage.setItem("usuario", "Fernando");
+console.log(localStorage.getItem("usuario"));
+
+sessionStorage.setItem("apellidos", "Gil");
+console.log(sessionStorage.getItem("apellidos"));
+sessionStorage.removeItem("apellidos");
+sessionStorage.clear();
+
+var usuario = {
+	"id":1,
+	"nombre":"Holmes"
+}
+
+localStorage.setItem("user", JSON.stringify(usuario));
+console.log(JSON.parse(localStorage.getItem("user")));
+</script>
+</head>
+<body>
+<h1>Hola caracola</h1>
+</body>
+</html>
